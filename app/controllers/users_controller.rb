@@ -29,6 +29,11 @@ def create
 	end
 end
 
+def show
+	@user = User.find(params[:id])
+	@articles = @user.articles
+end
+
 
 private
 
